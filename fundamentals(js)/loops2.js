@@ -44,3 +44,42 @@ console.log("negative" + neg);
 console.log("positive" + positive);
 console.log("zero" + zero);
 
+
+
+//write a function that returns the largest number in an array
+
+
+function larg(arr) {
+    let largest = -Infinity;// can use arr[0] if u know that the array is not empty
+    for (let i = 0; i < arr.length; i++){
+        if (arr[i] > largest) {
+            largest = arr[i];
+        }
+    }
+
+    return largest;
+}
+
+let arr3 = [10,3,5,6,7,1];
+console.log(larg(arr3));
+
+//write a function that returns the least number in an array
+
+
+function small(arr) {
+    let minimum = Infinity;
+    for (let i = 0; i < arr.length; i++){
+        if (arr[i] < minimum) {
+            minimum = arr[i];
+        }
+    }
+
+    return minimum;
+}
+
+let arr4 = [10,3,5,6,7,1];
+console.log(small(arr4))
+
+
+
+
