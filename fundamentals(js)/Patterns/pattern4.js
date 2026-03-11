@@ -6,6 +6,7 @@ for(let i=0;i<n;i++){
     row+=" ";
   }
   for(let k=0;k<=i;k++){
+    
     row+="*";
   }
   console.log(row);
@@ -23,3 +24,6 @@ for(let i=n;i>0;i--){
   }
   console.log(row);
 }
+
+
+
