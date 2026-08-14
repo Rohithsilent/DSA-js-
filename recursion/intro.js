@@ -24,9 +24,6 @@ function sum(n){
     return n + sum(n-1);
 }
 
-function sum_arr(arr){
-    
-}
 
 num = 9
 func(num)
