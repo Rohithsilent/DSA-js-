@@ -18,7 +18,15 @@ let isodd = (arr[n]%2 != 0);
     return (isodd ? arr[n] : 0)+sum_odd(n-1); 
 }
 
+function sum_even(n){
+    let iseven  = (arr[n]%2 == 0)
+     
+    if(n ==0){
+        return iseven ? arr[n] : 0;
+    }
 
+    return (iseven ? arr[n] :0 )+sum_even(n-1);
+}
 
 
 
@@ -27,3 +35,5 @@ arr=[2,3,4,5,3]
 console.log(sum(arr.length-1))
 
 console.log(sum_odd(arr.length-1))
+
+console.log(sum_even(arr.length-1))
